@@ -3,9 +3,15 @@
     margin-top: 20px; 
   }
   
-  .card {
-    width: 400px; 
+ 
+
+.card {
+    width: 400px;
+    background: linear-gradient(45deg, #797878, #030303); 
+    border-radius: 10px; 
+    margin: 10px; 
   }
+  
   
   .cardMedia {
     height: 300px; 
@@ -29,6 +35,6 @@
   }
   
   .cardContainer {
-    margin-right: 82px; 
+    margin-right: 56px; 
   }
   
