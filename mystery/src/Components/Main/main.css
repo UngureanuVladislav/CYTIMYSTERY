@@ -1,0 +1,26 @@
+/* ImgMediaCard.css */
+
+.cardContainer {
+    margin-top: 20px; /* Выберите желаемое значение отступа */
+  }
+  
+  .card {
+    width: 400px; /* Ширина карточки */
+  }
+  
+  .cardMedia {
+    height: 300px; /* Высота медиа-контента */
+  }
+  
+  .cardTitle {
+    font-size: 1.5rem; /* Размер заголовка */
+  }
+  
+  .cardContent {
+    font-size: 1rem; /* Размер текста контента */
+  }
+  
+  .cardActions {
+    justify-content: space-between; /* Расстояние между кнопками */
+  }
+  
