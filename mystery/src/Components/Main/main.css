@@ -6,7 +6,7 @@
  
 
 .card {
-    width: 400px;
+    width: 397px;
     background: linear-gradient(45deg, #797878, #030303); 
     border-radius: 10px; 
     margin: 10px; 
@@ -37,4 +37,7 @@
   .cardContainer {
     margin-right: 56px; 
   }
-  
+  .cardContainer:hover .card {
+    transform: scale(1.05);
+    transition: transform 0.3s ease-in-out;
+}

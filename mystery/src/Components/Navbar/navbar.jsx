@@ -3,6 +3,7 @@ import './navbar.css';
 import { AppBar, Toolbar, IconButton, Typography, Container, Button, Box, Tooltip, Avatar, Menu, MenuItem } from '@mui/material';
 import MenuIcon from '@mui/icons-material/Menu';
 import PublicIcon from '@mui/icons-material/Public';
+import { Link } from 'react-router-dom'; // Импортируем компонент Link из react-router-dom
 
 const Navbar = () => {
     const pages = ['Quests', 'About us', 'Blog'];
@@ -43,8 +44,8 @@ const Navbar = () => {
                     <Typography
                         variant="h6"
                         noWrap
-                        component="a"
-                        href="#app-bar-with-responsive-menu"
+                        component={Link}
+                        to="/"
                         sx={{
                             mr: 2,
                             display: { xs: 'none', md: 'flex' },
@@ -60,7 +61,7 @@ const Navbar = () => {
 
                     <Box sx={{ display: 'flex' }}>
                         {pages.map((page) => (
-                            <Button key={page} sx={{ my: 2, color: 'white' }}>
+                            <Button key={page} sx={{ my: 2, color: 'white' }} component={Link} to={`/${page.toLowerCase()}`}>
                                 {page}
                             </Button>
                         ))}
